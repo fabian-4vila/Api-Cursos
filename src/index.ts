@@ -1,23 +1,23 @@
-import  express  from "express";
-import  morgan from "morgan";
-import cors from 'cors';
-import estudiantesRoutes from "./routes/estudiantesRoutes";
-import profesosresRoutes from "./routes/profesoresRoutes";
-import cursosRoutes from "./routes/cursosRoutes";
+import app from "./app";
+import { AppDataSource } from "./db/conexion";
 
 
-const app = express();
 
-app.use(morgan('dev'));
-app.use(cors());
-app.get('/ping',(req,res)=>{
-    res.send('pong');
-});
+async function main(){
+    try {
+        
+        await AppDataSource.initialize();
+        console.log('Base de datos conectada');
+        
+        app.listen(6505,()=>{
+            console.log('Servidor activo!!!');
+        });
+    } catch (err) {
+        if (err instanceof Error) {
+            console.log(err.message);
+            
+        }
+    }
+}
 
-app.use("/estudiantes", estudiantesRoutes);
-app.use("/profesores",profesosresRoutes);
-app.use("/cursos", cursosRoutes)
-
-app.listen(6505, ()=>{
-    console.log('Server activo!!');
-});
+main();
