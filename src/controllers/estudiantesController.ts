@@ -2,8 +2,6 @@ import { Request, Response } from "express";
 import { Estudiante } from "../models/estudiantesModel";
 
 
-
-
 class EstudiantesController {
     constructor(){
 
