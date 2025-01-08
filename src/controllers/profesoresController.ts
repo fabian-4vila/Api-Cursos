@@ -7,7 +7,7 @@ class ProfesorController {
     constructor(){
 
     }
-    async consultar(req: Request, res: Response){
+    async consultar(req: Request, res: Response): Promise<void>{
         try {
             const data = await Profesor.find();
             res.status(200).json(data);
@@ -17,7 +17,7 @@ class ProfesorController {
             }
         }
     };
-    async consultarDetalle(req: Request, res: Response) {
+    async consultarDetalle(req: Request, res: Response): Promise<void> {
         const {id} = req.params;
         try {
             const registro = await Profesor.findOneBy({id:Number(id)});
@@ -31,7 +31,7 @@ class ProfesorController {
             }
         }
     };
-    async ingresar(req: Request, res: Response){
+    async ingresar(req: Request, res: Response): Promise<void>{
         try {
             const registro = await Profesor.save(req.body);
             res.status(201).json(registro);
@@ -42,7 +42,7 @@ class ProfesorController {
             }
         }
     };
-    async actualizar(req: Request, res: Response){
+    async actualizar(req: Request, res: Response): Promise<void>{
         const {id} = req.params
         try {
             const registro = await Profesor.findOneBy({id:Number(id)});
@@ -58,7 +58,7 @@ class ProfesorController {
             }
         }
     };
-    async borrar(req: Request, res: Response){
+    async borrar(req: Request, res: Response): Promise<void>{
         const { id } = req.params
         try {
             const registro = await Profesor.findOneBy({id:Number(id)});

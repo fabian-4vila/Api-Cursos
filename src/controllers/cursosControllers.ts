@@ -104,7 +104,7 @@ class CursosController {
         }
     }
 
-    async asociarEstudiante(req: Request, res: Response): Promise<void> {
+    async asociarEstudiante(req: Request, res: Response) {
         const { curso_id, estudiante_id } = req.body;
         if (!curso_id || !estudiante_id) {
             res.status(400).send("cursoId y estudianteId son requeridos");
