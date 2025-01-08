@@ -148,10 +148,11 @@ POST /cursos/registraEstudiante
 ## **Tecnologías Utilizadas**
 
 - Node.js
+- Typescript
 - Express
 - TypeORM
 - MySQL
-- Typescript
+
 
 ---
 
