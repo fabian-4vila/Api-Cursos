@@ -9,8 +9,8 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 
 1. Clona el repositorio:
    ```bash
-   git clone <URL-del-repositorio>
-   cd <nombre-del-repositorio>
+   git clone https://github.com/fabian-4vila/backend-ts.git
+   cd backend-ts
    ```
 
 2. Instala las dependencias:
@@ -29,7 +29,7 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
        username: "tu_usuario",
        password: "tu_contraseña",
        database: "nombre_base_datos",
-       entities: [__dirname + '/../models/*.ts'],
+       entities: [Estudiante,Profesor,Curso],
        synchronize: true
    });
    ```
