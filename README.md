@@ -47,7 +47,7 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 - `apellido`: Apellido del profesor (cadena).
 - `email`: Correo electrónico (cadena).
 - Relación con cursos.
-
+---
 ### **Estudiante**
 - `id`: Identificador único (número).
 - `dni`: Documento de identificación (cadena).
@@ -55,7 +55,7 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 - `apellido`: Apellido del estudiante (cadena).
 - `email`: Correo electrónico (cadena).
 - Relación con cursos.
-
+---
 ### **Curso**
 - `id`: Identificador único (número).
 - `nombre`: Nombre del curso (cadena).
@@ -64,9 +64,8 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 - `estudiantes`: Relación con varios estudiantes.
 
 ## **Endpoints**
-
 ### **Rutas de Cursos**
-
+---
 | Método | Ruta                         | Descripción                        |
 |--------|------------------------------|------------------------------------|
 | GET    | `/cursos`                   | Consultar todos los cursos.       |
@@ -75,9 +74,8 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 | PUT    | `/cursos/:id`               | Actualizar un curso.              |
 | DELETE | `/cursos/:id`               | Eliminar un curso.                |
 | POST   | `/cursos/registraEstudiante`| Asociar un estudiante a un curso. |
-
 ### **Rutas de Estudiantes**
-
+---
 | Método | Ruta                | Descripción                        |
 |--------|---------------------|------------------------------------|
 | GET    | `/estudiantes`      | Consultar todos los estudiantes.  |
@@ -85,9 +83,8 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 | GET    | `/estudiantes/:id`  | Consultar detalles de un estudiante. |
 | PUT    | `/estudiantes/:id`  | Actualizar un estudiante.         |
 | DELETE | `/estudiantes/:id`  | Eliminar un estudiante.           |
-
 ### **Rutas de Profesores**
-
+---
 | Método | Ruta               | Descripción                       |
 |--------|--------------------|-----------------------------------|
 | GET    | `/profesores`      | Consultar todos los profesores.  |
