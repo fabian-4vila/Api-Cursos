@@ -3,7 +3,6 @@
 
 Esta API permite gestionar la información relacionada con profesores, estudiantes y cursos. Está desarrollada en Node.js con Express, Typescript y utiliza TypeORM para interactuar con la base de datos MySQL.
 
----
 
 ## **Instalación**
 
@@ -40,8 +39,6 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
    ```
    El servidor se iniciará en `http://localhost:3000`.
 
----
-
 ## **Modelos**
 
 ### **Profesor**
@@ -65,8 +62,6 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 - `descripcion`: Descripción del curso (cadena).
 - `profesor`: Relación con un profesor.
 - `estudiantes`: Relación con varios estudiantes.
-
----
 
 ## **Endpoints**
 
@@ -101,7 +96,6 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 | PUT    | `/profesores/:id`  | Actualizar un profesor.          |
 | DELETE | `/profesores/:id`  | Eliminar un profesor.            |
 
----
 
 ## **Ejemplos de Uso**
 
@@ -143,7 +137,6 @@ POST /cursos/registraEstudiante
 }
 ```
 
----
 
 ## **Tecnologías Utilizadas**
 
@@ -153,15 +146,8 @@ POST /cursos/registraEstudiante
 - TypeORM
 - MySQL
 
-
----
-
 ## **Próximos Pasos**
 - Implementar autenticación y autorización.
 - Agregar validaciones más robustas en los datos de entrada.
 - Crear documentación interactiva con Swagger.
-
----
-
-😄
 
