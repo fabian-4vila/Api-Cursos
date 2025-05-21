@@ -1,5 +1,5 @@
 # Api Cursos 
-![Hecho con TypeScript](https://img.shields.io/badge/Hecho%20con-TypeScript-blue?logo=typescript)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
 
 # API de Profesores, Estudiantes y Cursos
 
