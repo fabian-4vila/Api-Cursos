@@ -10,8 +10,8 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/fabian-4vila/backend-ts.git
-   cd backend-ts
+   git clone https://github.com/fabian-4vila/Api-Cursos.git
+   cd Api-Cursos
    ```
 
 2. Instala las dependencias:
