@@ -1,4 +1,5 @@
-# Backend-ts
+# Api Cursos Con ![Hecho con TypeScript](https://img.shields.io/badge/Hecho%20con-TypeScript-blue?logo=typescript)
+
 # API de Profesores, Estudiantes y Cursos
 
 Esta API permite gestionar la información relacionada con profesores, estudiantes y cursos. Está desarrollada en Node.js con Express, Typescript y utiliza TypeORM para interactuar con la base de datos MySQL.
