@@ -39,6 +39,28 @@ Esta API permite gestionar la información relacionada con profesores, estudiant
    npm run dev
    ```
    El servidor se iniciará en `http://localhost:3000`.
+5. estructura 
+.
+├── build/                            # Carpeta generada, probablemente por TypeScript
+│   ├── controllers/                 # agregando-dependencia-nueva (4 months ago)
+│   ├── models/                      # agregando-dependencia-nueva (4 months ago)
+│   ├── routes/                      # agregando-dependencia-nueva (4 months ago)
+│   ├── app.js                       # agregando-dependencia-nueva (4 months ago)
+│   └── index.js                     # agregando-dependencia-nueva (4 months ago)
+│
+├── src/                              # Código fuente en TypeScript
+│   ├── controllers/                 # mejorando-controllers (4 months ago)
+│   ├── models/                      # controller-Cursos (4 months ago)
+│   ├── routes/                      # prueba-ts (4 months ago)
+│   ├── app.ts                       # modificando-controllers (4 months ago)
+│   └── index.ts                     # modificando-controllers (4 months ago)
+│
+├── .gitignore                        # cambio-gitignore (4 months ago)
+├── README.md                         # Update README.md (last week)
+├── package-lock.json                 # agregando-dependencia-nueva (4 months ago)
+├── package.json                      # agregando-dependencia-nueva (4 months ago)
+└── tsconfig.json                     # (commit no especificado)
+
 
 ## **Modelos**
 
